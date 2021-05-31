@@ -2,6 +2,10 @@
 $input: #000;
 $border_color: #c0c0c0;
 $text_color: #888;
+$row_bg: #f8f9fa;
+$cell_border: #e2e3e3;
+$cell_text: #111;
+$cell_outline: #3c74ff;
 
 //input
 $input_height: 20px;
@@ -20,3 +24,7 @@ $header_height: 34px;
 $toolbar_height: 40px;
 $formula_height: 24px;
 $info_cell_width: 40px;
+$table_row_min_height: 20px;
+$table_row_height: 24px;
+$cell_min_width: 40px;
+$cell_width: 120px;

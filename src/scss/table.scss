@@ -2,4 +2,59 @@
 @import 'mixins';
 
 .excel__table {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: $header_height + $toolbar_height + $formula_height;
+  padding-bottom: 2px;
+  overflow-x: auto;
+  
+  .row {
+    display: flex;
+    min-height: $table_row_min_height;
+    height: $table_row_height;
+  }
+
+  .row-info {
+    @include flexCenter();
+    min-width: $info_cell_width;
+    height: 100%;
+    border: 1px solid $border_color;
+    background-color: $row_bg;
+    border-top: none;
+  }
+
+  .row-data {
+    display: flex;
+  }
+
+  .column {
+    @include flexCenter();
+    background-color: $row_bg;
+    min-width: $cell_min_width;
+    width: $cell_width;
+    border: 1px solid $border_color;
+    height: 100%;
+    border-top: 0;
+    border-left: 0;
+  }
+
+  .cell {
+    min-width: $cell_min_width;
+    width: $cell_width;
+    padding: 5px;
+    height: 100%;
+    border: 1px solid $cell_border;
+    border-top: 0;
+    border-left: 0;
+    color: $cell_text;
+    white-space: nowrap;
+    outline: none;
+
+    &.selected {
+      border: none;
+      outline: 2px solid $cell_outline;
+      z-index: 2;
+    }
+  }
 }
