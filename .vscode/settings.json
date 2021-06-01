@@ -1,4 +1,8 @@
 {
   "prettier.singleQuote": true,
-  "prettier.arrowParens": "avoid"
+  "prettier.arrowParens": "avoid",
+  "prettier.tabWidth": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2
 }
